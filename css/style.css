@@ -434,7 +434,7 @@ input[type="checkbox"] {
 }
 #pwe-aside {
     padding: 60px 30px;
-    width: 23%;
+    width: 15%;
     position: fixed;
     bottom: 0;
     top: 0;
@@ -478,6 +478,15 @@ input[type="checkbox"] {
     color: #000;
     line-height: 1.2em;
     letter-spacing: 0px;
+}
+
+.pwe-logo{
+    text-align: center;
+    margin: 0;
+    display: block;
+    width: 25%;
+    position: relative;
+    margin: 0 auto 40px auto;
 }
 #pwe-aside #pwe-logo span {
     font-family: TuesdayNight;
@@ -556,7 +565,7 @@ input[type="checkbox"] {
     position: relative;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -651,7 +660,7 @@ input[type="checkbox"] {
 
 /* ===== Content styles ===== */
 #pwe-main {
-    width: 77%;
+    width: 85%;
     float: right;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
@@ -1914,7 +1923,7 @@ ol.comment-list li .children li {
 
 /* ===== Footer styles ===== */
 #pwe-footer2 {
-    padding: 100px 60px;
+    padding: 50px 60px;
     background: #000;
 }
 #pwe-footer2 h2,
@@ -1961,7 +1970,7 @@ ol.comment-list li .children li {
 }
 @media screen and (max-width: 768px) {
     #pwe-footer2 {
-        padding: 100px 30px 80px 30px;
+        padding: 20px 30px 30px 30px;
         background: #000;
         text-align: center;
     }
