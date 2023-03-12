@@ -219,6 +219,26 @@ button:hover {
     background-color: transparent;
     color: #000;
 }
+
+.btn_service{
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    padding: 15px 15px;
+    margin: 0;
+    font-weight: 600;
+    position: relative;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    line-height: 1em;
+}
+
+.btn_service:hover{
+    background-color: transparent;
+    color: #000;
+}
 select {
     padding: 10px;
     border-radius: 5px;
@@ -906,7 +926,7 @@ body.offcanvas .pwe-nav-toggle {
     top: 12px;
     font-family: TuesdayNight;
     font-size: 27px;
-    color:#ca861f;
+    color:#a2783a;
     line-height: 1.5em;
     margin-bottom: 0;
 }
