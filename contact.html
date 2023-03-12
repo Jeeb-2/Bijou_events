@@ -72,9 +72,16 @@
                     </div>
                 </div>
             </div>
+            
             <!-- Contact -->
+
             <div class="contact-section pt-0 pb-60">
                 <div class="container-fluid">
+                    <div class="row pb-60">
+                    </div>
+                    <!-- Map Section-->
+                    <div class="map-section">
+                        <div class="row">
                             <!-- Contact Form -->
                             <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
                                 <h3 class="pwe-about-heading">Contact Form</h3>
@@ -99,12 +106,12 @@
                                         </div>
                                         <div class="col-md-6 form-group">
                                             <label for="phone">Phone Number *</label> <br>
-                                            <input name="phone" type="tel" placeholder="E.g. 123 444 5555"> 
+                                            <input name="phone" type="tel" placeholder="E.g. 123 444 5555" required> 
                                         </div>
 
                                         <div class="col-md-12 form-group">
                                             <label for="type_event">Which service are you interested in? *</label> <br>
-                                            <select name="type_event" id="">
+                                            <select name="type_event" id="" required>
                                                 <option value="" disabled selected>Select an option</option>
                                                 <option value="planning_service">Planning Services</option>
                                                 <option value="flora_event_design">Floral & Event Design</option>
@@ -114,7 +121,7 @@
 
                                         <div class="col-md-12 form-group">
                                             <label for="type_event">Type of Event? *</label> <br>
-                                            <select name="type_event" id="">
+                                            <select name="type_event" id="" required>
                                                 <option value="" disabled selected>Select an option</option>
                                                 <option value="corporate Event">Corporate Event</option>
                                                 <option value="full wedding">Full Wedding</option>
@@ -126,11 +133,11 @@
                                         
                                         <div class="col-md-12 form-group">
                                             <label for="date_event">Date of Event? *</label> <br>
-                                            <input name="date" type="date" placeholder="Date Event?"> 
+                                            <input name="date" type="date" placeholder="Date Event?" required> 
                                         </div>
                                         <div class="col-md-12 form-group">
                                             <label for="guest_count">Guest Count *</label> <br>
-                                            <input name="guest_count" type="number" placeholder="E.g. 300"> 
+                                            <input name="guest_count" type="number" placeholder="E.g. 300" required> 
                                         </div>
                                         <div class="col-md-12 form-group">
                                             <label for="address">Event City & State *</label> <br>
@@ -146,16 +153,52 @@
                                             <textarea name="message" id="message" cols="30" rows="2" placeholder="What do I need to know about this special day?" required="required"></textarea>
                                         </div>
                                         
-                                        <div class="col-md-6 form-group" style="margin-top: 20px;">
+                                        <div class="col-md-6 form-group" style="margin-top: 20px;" aria-required="true">
                                             <label for="hear">How did you hear about us? *</label> <br>
-                                            <input type="checkbox" name="personal" style="margin-right: 15px;"><label for="personal" style="color: #000;">Personal Website</label> <br>
-                                            <input type="checkbox" name="client" style="margin-right: 15px;"><label for="client" style="color: #000;">Client Referral</label> <br>
-                                            <input type="checkbox" name="facebook" style="margin-right: 15px;"><label for="facebook" style="color: #000;">Facebook</label> <br>
-                                            <input type="checkbox" name="instagram" style="margin-right: 15px;"><label for="instagram" style="color: #000;">Instagram</label> <br>
-                                            <input type="checkbox" name="other" style="margin-right: 15px;"><label for="other" style="color: #000;">Other</label>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <input name="submit" type="submit"  value="SEND">
+
+
+                                            <input type="checkbox" name="personal" style="margin-right: 15px;">
+                                            <label for="personal" style="color: #000;">The Knot</label> <br>
+
+
+                                            <input type="checkbox" name="client" style="margin-right: 15px;">
+                                            <label for="client" style="color: #000;">Wedding Wire</label> <br>
+
+
+                                            <input type="checkbox" name="facebook" style="margin-right: 15px;">
+                                            <label for="facebook" style="color: #000;">Premier Bride</label> <br>
+
+
+                                            <input type="checkbox" name="instagram" style="margin-right: 15px;">
+                                            <label for="instagram" style="color: #000;">Wisconsin Bride</label> <br>
+
+
+                                            <input type="checkbox" name="instagram" style="margin-right: 15px;">
+                                            <label for="instagram" style="color: #000;">Facebook</label> <br>
+
+
+                                            <input type="checkbox" name="instagram" style="margin-right: 15px;">
+                                            <label for="instagram" style="color: #000;">Instagram</label> <br>
+
+
+                                            <input type="checkbox" name="instagram" style="margin-right: 15px;">
+                                            <label for="instagram" style="color: #000;">Google Search</label> <br>
+
+
+                                            <input type="checkbox" name="instagram" style="margin-right: 15px;">
+                                            <label for="instagram" style="color: #000;">Referral</label> <br>
+
+
+                                            <input type="checkbox" name="other" style="margin-right: 15px;">
+                                            <label for="other" style="color: #000;">Other</label>
+
+                                            <div id="text-input" style="display: none;">
+                                                <textarea type="text" id="other" name="other" required></textarea>
+                                            </div>
+
+
+                                        <div class="col-md-12" style="margin: 30px 0;">
+                                            <input name="submit" type="submit"  value="submit">
                                         </div>
                                         
                                     </div>
@@ -200,9 +243,9 @@
                             <img class="pwe-logo" src="images/logo_2.png">
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-                           
+                            
                             <p>contact@bijouevents.com</p>
-                           
+                            
                             <p>Madison, Wisconsin</p>
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
@@ -217,8 +260,18 @@
         </div>
     </div>
     <!-- jQuery -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe2q1gFSd75jKUnTDPq0nZWaMlEu6vL30"></script>
-    <script src="js/googlemap.js"></script>
+    <script>
+        var checkbox = document.querySelectorAll('input[type="checkbox"]');
+var textInput = document.getElementById('text-input');
+
+checkbox[checkbox.length-1].addEventListener('change', function() {
+  if(this.checked) {
+    textInput.style.display = "block";
+  } else {
+    textInput.style.display = "none";
+  }
+});
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/modernizr-2.6.2.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
@@ -231,5 +284,5 @@
     <script src="js/main.js"></script>
 </body>
 
-<!-- Mirrored from duruthemes.com/demo/html/pwe/multipage-video/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Mar 2023 21:56:00 GMT -->
+<!-- Mirrored from duruthemes.com/demo/html/pwe/multipage-video/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Mar 2023 21:55:57 GMT -->
 </html>
